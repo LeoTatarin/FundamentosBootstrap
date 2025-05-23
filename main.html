@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo Festival</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.932);
+        }
+        .h2-carousel{
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        
+    </style>
+
+</head>
+<body >
+    <header class="p-5 text-white"> <!-- padding 5 background black texto branco -->
+        <div class="container">
+            <h1 class="mb-0">Leo Music Festival</h1>
+        </div>
+    </header>
+    <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel"> <!-- define add fade animação da-bs-ride inicia sozinho -->
+        <div class="carousel-inner"> <!-- container da linha de fotos do carousel -->
+            <div class="carousel-item active" data-bs-interval="3000"> <!-- Um dos itens do carousel e tempo de transição-->
+                <img class="d-block w-100" src="./imagens/LF1.jpg"> <!-- display block e width 100% -->
+                <div class="carousel-caption">
+                    <h2 class="text-end h2-carousel">Suas bandas favoritas</h2>
+                    <h2 class="text-end h2-carousel">Três dias de shows</h2>
+                    <h2 class="text-end h2-carousel">Três palcos difetentes</h2>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img class="d-block w-100" src="./imagens/LF4.jpg">
+                <div class="carousel-caption">
+                    <h2 class="text-end h2-carousel">Suas bandas favoritas</h2>
+                    <h2 class="text-end h2-carousel">Três dias de shows</h2>
+                    <h2 class="text-end h2-carousel">Três palcos difetentes</h2>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img class="d-block w-100" src="./imagens/LF3.jpg">
+                <div class="carousel-caption">
+                    <h2 class="text-end h2-carousel w-auto">Suas bandas favoritas</h2>
+                    <h2 class="text-end h2-carousel">Três dias de shows</h2>
+                    <h2 class="text-end h2-carousel">Três palcos difetentes</h2>
+                </div>
+            </div>
+            
+        </div>
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button"> <!-- define oq controla, como controla, estilo seta -->
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators"> <!-- cointainer para mostrador de slide -->
+            <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 p-3">
+                <div class="card text-bg-dark">
+                    <header class="card-header">
+                        Passaporte Full
+                    </header>
+                    <img src="https://laoncommerce.com.br/laonfest/wp-content/uploads/2020/04/ingresso_banner.jpg"/>
+                    <div class="card-body">
+                        <h4 class="card-title">R$ 750,00</h4>
+                        <p class="card-text">
+                            Acesso aos tres dias de festival a todos as pistas
+                        </p>
+                        <a href="#" class="btn btn-primary btn-sm">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 p-3">
+                <div class="card text-bg-dark">
+                    <header class="card-header">
+                        Passaporte Premium VIP
+                    </header>
+                    <img src="https://laoncommerce.com.br/laonfest/wp-content/uploads/2020/04/ingresso_banner.jpg"/>
+                    <div class="card-body">
+                        <h4 class="card-title">R$ 1.500,00</h4>
+                        <p class="card-text">
+                            Acesso aos tres dias de festival, a todas as areas VIPS e Backstages
+                        </p>
+                        <a href="#" class="btn btn-primary btn-success">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 p-3">
+                <div class="card text-bg-dark">
+                    <header class="card-header">
+                        Passaporte Diario
+                    </header>
+                    <img src="https://laoncommerce.com.br/laonfest/wp-content/uploads/2020/04/ingresso_banner.jpg"/>
+                    <div class="card-body">
+                        <h4 class="card-title">R$ 350,00</h4>
+                        <p class="card-text">
+                            Acesso unico a pista no dia de sua escolha definido na hora da compra
+                        </p>
+                        <a href="#" class="btn btn-primary btn-sm">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-5 text-white text-end">
+        <div class="container">
+            <p>&copy; 2025 Leo Music Festival, todos os direito reservados.</p>
+        </div>
+    </footer>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
